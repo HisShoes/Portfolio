@@ -1,63 +1,288 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<link rel="shortcut icon" href="./Assets/Images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./Styles/Global.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ryan Simpson</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-eAVkiER0fL/ySiqS7dXu8TLpoR8d9KRzIYtG0Tz7pi24qgQIIupp0fn2XA1H90fP"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <a class="navbar-brand" href="#">Ryan Simpson</a>
 
-	<nav class="navbar">
-	<div class="container">
-		<div>
-			<h1>&nbsp&nbsp&nbspRyan</h1>
-			<a href = "index.html">
-				<img src="./Assets/Images/MyFaceIcon.png" alt="My face" id="logo">
-			</a>
-			<h1>Simpson</h1>
-		</div>
-		<div>
-			<hr>
-		</div>
-		<div>
-			<h3> Software Developer </h3>
-		</div>
-	</div>
-	</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
 
-	<div class="container">
-		<div class = "row">
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<div class="thumbnail card" onclick="location.href='./ColorGuessingGame/ColorGame.html'">
-					<span> <h1>Color Game</h1> </span>
-					<img src="./Assets/Images/ColorGame.png">
-					<span class="tag">Front-end</span>
-					<span class="tag">Javavscript</span>
-					<span class="tag">HTML</span>
-					<span class="tag">CSS</span>
-				</div>
-			</div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav">
+        <a class="local nav-item nav-link" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" href="#about">About</a>
+        <a class="local nav-item nav-link" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" href="#experience">Experience</a>
+        <a class="local nav-item nav-link" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" href="#education">Education</a>
+        <a class="local nav-item nav-link" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" href="#skills">Skills</a>
+        <a class="local nav-item nav-link" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" href="#interests">Interests</a>
+      </div>
+    </div>
+  </nav>
 
-			<div class="col-md-6 col-sm-6  col-xs-12">
-				<div class="thumbnail card" onclick="location.href='./ToDoList/index.html'">
-					<span> <h1>To Do List</h1> </span>
-					<img src="./Assets/Images/ToDoList.png">
-					<span class="tag">Front-end</span>
-					<span class="tag">Javavscript</span>
-					<span class="tag">jQuery</span>
-					<span class="tag">HTML</span>
-					<span class="tag">CSS</span>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- About/Contact Section -->
+  <div class="container-fluid" id="about">
+    <section class="my-5">
+      <div>
+        <h1 class="text-center text-uppercase">
+          Ryan
+          <span class="accent-text"> Simpson </span>
+        </h1>
+        <h3 class="text-center">
+          <small class="text-muted">
+            Software Developer
+          </small>
+        </h3>
+
+        <p class="text-center">
+          I am driven and passionate about what I do, mainly work with Javascript, and always looking to learn and improve.
+        </p>
+
+        <div class="social">
+          <a class="mx-2" href="https://github.com/HisShoes" target="_blank">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x" style="color:#4cb69f"></i>
+              <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a class="mx-2" href="https://www.linkedin.com/in/hisshoes/" target="_blank">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x" style="color:#4cb69f"></i>
+              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </div>
+        <div class="text-center mt-5">
+          <i class="fas fa-chevron-down fa-4x accent-text"></i>
+          <div>
+          </div>
+    </section>
+
+    <hr>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div>
+        <h2 class="padded mb-5">Experience</h2>
+        <div class="timeline-container">
+          <div class="timeline padded">
+            <div class="timeline-item pb-3 mb-3">
+              <div class="flex flex-between">
+                <h5>Siemens · Developer </h5>
+                <h5 class="accent-text"> 2017 - Current</h5>
+              </div>
+              <h5>
+                <small class="text-muted">Corporate Web and Application Development</small>
+              </h5>
+              <p class="mt-3">
+                At Siemens I work on back and front end applications, which allow the company to manage utility metering - from booking applications
+                and engineer 'on the job applications' to asset tracking. I started my job here as a specialist in Pega and
+                have expanded to work on PLSQL, and front and back end web development.
+              </p>
+              <p>
+                My favourite project so far has been creating a customer booking portal for an external client which was accessed by external
+                people (most of our development is for internal use, this was sent to thousands of people on a weekly basis)
+                to book jobs to have smart meters installed. I had a lot of freedom on this project to create and design
+                the front end and Node app behind it, and got to use Grafana to add some analytics to provide insight to
+                any further improvements we could make.
+              </p>
+              <p>
+                As a developer here my role requires that manage my own estimates, time and workload and ensure that they all line up to
+                result in successful projects. I have experience in all stages of the development process from requirement
+                clarification and solution design to development, test and release.
+              </p>
+            </div>
+            <div class="timeline-item pb-3 mb-3">
+              <div class="flex flex-between">
+                <h5>QA · Consultant </h5>
+                <h5 class="accent-text"> 2015 - 2017 </h5>
+              </div>
+              <h5>
+                <small class="text-muted">First Industry Job</small>
+              </h5>
+              <p class="mt-3">
+                I was hired by QA after University to become a contracting consultant. I went through group training in enterprise architecture,
+                Java and earned my first Pega qualification, before moving to a client site to help Siemens complete their
+                first booking application in Pega. We also had a brief primer on dev ops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Education -->
+    <section id="education">
+      <div>
+        <h2 class="padded mb-5">Education</h2>
+        <div class="timeline-container">
+          <div class="timeline padded">
+            <div class="timeline-item pb-3 mb-3">
+              <div class="flex flex-between">
+                <h5>Pearson Vue Nottingham </h5>
+                <h5 class="accent-text"> 2015 - 2017</h5>
+              </div>
+              <h5>
+                <small class="text-muted">Pega Certified Senior System Architect, System Architect</small>
+              </h5>
+              <p class="mt-3">
+                <span class="badge badge-info">Understanding of OOP Principles</span>
+                <span class="badge badge-info">Pega</span>
+                <span class="badge badge-info">Application Design and Structure</span>
+                <span class="badge badge-info">Building for Change</span>
+              </p>
+            </div>
+            <div class="timeline-item pb-3 mb-3">
+              <div class="flex flex-between">
+                <h5>University of Abertay </h5>
+                <h5 class="accent-text"> 2011 - 2015</h5>
+              </div>
+              <h5>
+                <small class="text-muted">2:1 Computer Games Technology Bsc Hons</small>
+              </h5>
+              <p class="mt-3">
+                <span class="badge badge-info">Game Engine and Mechanics</span>
+                <span class="badge badge-info">Mathematics</span>
+                <span class="badge badge-info">Graphics Programming</span>
+                <span class="badge badge-info">AI</span>
+                <span class="badge badge-info">Console Development</span>
+                <span class="badge badge-info">Android Development</span>
+                <span class="badge badge-info">C++</span>
+                <span class="badge badge-info">Java</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="padded">
+        <h2 class="mb-1">Skills</h2>
+        <h5 class="mb-5">
+          <small class="text-muted">
+            These are the main languages/tools that I use professionally on a daily basis
+          </small>
+        </h5>
+        <div class="flex flex-between tools mb-5">
+          <div class="mx-3">
+            <i class="fab fa-git fa-4x"></i>
+          </div>
+          <div class="mx-3">
+            <i class="fab fa-node fa-4x"></i>
+          </div>
+          <div class="mx-3">
+            <i class="fab fa-angular fa-4x"></i>
+          </div>
+          <div class="mx-3">
+            <i class="fab fa-sass fa-4x"></i>
+          </div>
+          <div class="mx-3">
+            <i class="fab fa-js fa-4x"></i>
+          </div>
+          <div class="mx-3">
+            <i class="fab fa-css3-alt fa-4x"></i>
+          </div>
+        </div>
+        <h5 class="mb-3">
+          <small class="text-muted">
+            The below tools didn't have have nice font awesome icons but I use them on a daily basis..
+          </small>
+        </h5>
+        <div class="flex flex-around tools">
+          <h5>
+            <span class="badge badge-info">FeedHenry</span>
+          </h5>
+          <h5>
+            <span class="badge badge-info">Pega</span>
+          </h5>
+          <h5>
+            <span class="badge badge-info">PLSQL</span>
+          </h5>
+          <h5>
+            <span class="badge badge-info">SVN</span>
+          </h5>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Interests -->
+    <section id="interests">
+      <div class="padded">
+        <h2 class="mb-5">Interests</h2>
+        <div>
+          <p>
+            I enjoy playing with technology and development in my own time, I've taken part in a few game jams in the past and I am keen
+            to participate in more.
+          </p>
+          <p>
+            Apart from Software development, I'm also interested in keeping fit and video games.
+          </p>
+          <p>
+            I've completed 2 tough mudders with friends from work, enjoy climbing and slacklining, and have recently taken up Brazillian
+            Jiu Jitsu.
+          </p>
+          <p>
+            Over the past few years I've enjoyed playing competitive video games during my spare timeline - mostly CS:GO, League of Legends
+            and more recently Rocket League. I built my own PC when I went to university and played League in my Universitys
+            national team.
+          </p>
+        </div>
+      </div>
+    </section>
+    </div>
 
 
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <script>
+      function toggleMenu() {
+        $('.hamburger').toggleClass('open');
+      }
+
+      $(document).ready(function () {
+        $('.navbar-toggler').click(toggleMenu);
+      });
+
+    $('a.local[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+      toggleMenu()
+      event.preventDefault();
+      $('html, body').stop().animate({
+          scrollTop: target.offset().top-30
+      }, 1000);
+    }
+});
+    </script>
 
 </body>
+
 </html>
